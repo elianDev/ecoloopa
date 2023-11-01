@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500;700&display=swap");
 
-
 .whatsapp-link {
   position: fixed;
   width: 60px;
@@ -46,6 +45,11 @@ img {
 
 .filter {
   background: rgba(0, 0, 0, 0.55);
+}
+
+.container {
+  max-width: 90rem;
+  margin: 0 auto;
 }
 
 /**/
@@ -299,6 +303,31 @@ ul li:last-child h3 {
   margin-left: 10px;
   cursor: pointer;
 }
+
+/* FAQ */
+
+.faq li h3 {
+  font-size: 2rem;
+  padding: 0;
+}
+
+.faq li {
+  cursor: pointer;
+  background: rgba(35, 192, 35, 0.5);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.faq li p {
+  display: none;
+  font-size: 1.5rem;
+}
+
+.faq li.faq-active p {
+  display: initial;
+}
+
+/* FAQ */
 
 /*  */
 

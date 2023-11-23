@@ -242,6 +242,12 @@ main a:hover {
   display: initial;
 }
 
+@media (max-width: 700px) {
+  iframe {
+    max-width: 100%;
+  }
+}
+
 /* slide mapas */
 
 #explore {
@@ -359,25 +365,43 @@ ul li:last-child h3 {
 
 /* FAQ */
 
+.faq h1 {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+}
+
 .faq li h3 {
   font-size: 2rem;
   padding: 0;
+  margin: 0;
 }
 
 .faq li {
   cursor: pointer;
   background: rgba(35, 192, 35, 0.5);
-  padding: 0.5rem;
+  padding: 2rem;
   border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
 }
 
 .faq li p {
   display: none;
   font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
 }
 
 .faq li.faq-active p {
   display: initial;
+}
+
+@media (max-width: 760px) {
+  .faq li h3 {
+    font-size: 1.5rem;
+  }
 }
 
 /* FAQ */

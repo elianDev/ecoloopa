@@ -1,34 +1,53 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500;700&display=swap");
 
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem 0;
+  justify-items: center;
+  padding-bottom: 4rem;
+}
 
-.cards{
-  display: flex;
-  justify-content: center;
+.cards img {
+  display: block;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 0.5rem;
 }
 
 .card {
-  margin: 40px;
-  background-color: #13bb1c;
-  color: rgb(8, 8, 8);
-  width: 450px;
-  height: 400px;
-  border-radius: 10px;
+  max-width: 375px;
+  background: #164b12;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
   text-align: center;
-  box-shadow:rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;;
+  padding: 2rem 1.5rem 2rem;
+  color: #ddd;
 }
 
-.card>h1{
-  font-size: 20px;
-  padding-top: 10px;
+.card h1 {
+  color: #fff;
+  font-size: 2.25rem;
 }
 
-
-
-.card>img{
-  width: 100%;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius:10px;
+.card p {
+  font-size: 1.75rem;
+  max-width: 100%;
 }
+
+@media (max-width: 880px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .container {
+    margin: 0 20px !important;
+  }
+}
+
 .whatsapp-link {
   position: fixed;
   width: 60px;
@@ -161,6 +180,11 @@ main a {
   border-radius: 5px;
   position: relative;
   top: 2.3rem;
+}
+
+main a:hover {
+  cursor: pointer;
+  background: #0b9615;
 }
 
 /* slide mapas */
